@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* hero section css */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+nav > .logo {
+  width: 170px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav > ul > li {
+  margin-left: 40px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  position: relative;
+  transition: 0.3s ease; 
+}
+
+nav > ul > li > a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease; /* Smooth transition for underline width change */
+}
+
+nav > ul > li > a:hover::before {
+  width: 100%;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.contents > .h1 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.contents .h1:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.explore-btn {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-twitter:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+.fa-github:hover {
+  color: rgb(255, 123, 0);
+}
+
+
+/* body section css */
+.heading {
+  padding: 70px 300px;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+  /* logo carosel */
+  @keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 35s slides infinite linear;
+  }
+  
+  .logos:hover .logo_items {
+    animation-play-state: paused;
+  }
+  
+   .running-logo{
+    height: 100px;
+  }
+
+
+
+.nav-logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.nav-logo:hover{
+  color: #fff;
+}
+
+.mainMenu li a:hover {
+  color: #fff ;
+}
+.mainMenu li a:visited {
+  color: #fff ;
+}
+.explore-btn:hover{
+  color: #fff;
+}
+.explore-btn:visited{
+  color: #fff;
+}
+
+
+
+/* media query */
+
+@media (max-width: 800px) {
+
+  nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: rgb(36, 36, 36);
+      transition: top 1s ease 0s;
+      display: none;
+    }
+
+    .mainMenu > li {
+      padding-bottom: 20px;
+      margin-left: 0px;
+    }
+
+    .mainMenu li a {
+      font-size: 24px;
+    }
+
+  nav .openMenu {
+      display: block;
+    }
+
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fff;
+    }
+
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+
+    .icons > a {
+      text-decoration: none;
+    }
+    nav > .logo {
+      width: 100px;
+  }
+  nav > ul > li > a::before {
+      height: 0;
+ 
+  }
+
+  .contents > .h1 {
+      font-size: 20px !important;
+  }
+
+  .explore-btn{
+      font-size: 18px;
+      padding: 12px 34px;
+  }
+
+  /* body section */
+
+  .heading {
+      padding: 40px 40px;
+      font-size: 14px;
+      text-align: center;
+    }
+  
+  
+}
+
+.back-video {
+  width: 100% ;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 567px) {
+  .back-video {
+    width: auto ;
+    height: 100% ;
+  }
+}
+
+@media (max-width: 1446px) {
+  .back-video {
+    width: auto ;
+    height: 100% ;
+  }
+
+}
+
+
+
+/* @media (min-aspect-ratio: 16/9) {
+  .back-video {
+      width: 100%;
+      height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+      width: auto;
+      height: 100%;
+  }
+} */

@@ -330,6 +330,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
          line-height: 38px;
          font-weight: normal;
          }
+
          .content .article h2{
          display: block;
          margin: 14px 0;
@@ -1316,4 +1317,13 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
   }
   .abt-text {
     font-size: 20px;
+  }
+
+  .ct-icon {
+    display: contents !important;
+    color: #000 !important;
+  }
+  .bt-icons {
+    display: flex !important;
+    gap: 16px !important;
   }

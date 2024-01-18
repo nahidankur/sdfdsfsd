@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+.feature-box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .overlay {
+     background-color : rgba(0, 0, 0, 0.3);
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+  }
+
+  .box-btnn {
+    border: 2px solid #fff;
+    padding: 14px 22px !important;
+    text-decoration: none;
+    color: #fff !important;
+  }
+  .box-title {
+    margin-bottom: 30px !important;
+    font-family: 'Syncopate', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px !important;
+  }
+
+.fBox1 {
+    background-image: url(../images/cbb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.fBox2 {
+    background-image: url(../images/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.fBox3 {
+  background-image: url(../images/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.fBox4 {
+  background-image: url(../images/bg-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+ .box-container1 {
+    text-align: center;
+    z-index: 10000;
+    color: #fff;
+}
+.box-container2 {
+    text-align: center;
+    z-index: 10000;
+    color: #fff;
+}
+.box-container3 {
+    text-align: center;
+    z-index: 10000;
+    color: #fff;
+}
+.box-container4 {
+    text-align: center;
+    z-index: 10000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .feature-box-container {
+      grid-template-columns: 1fr;
+    }
+  }

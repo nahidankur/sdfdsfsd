@@ -46,15 +46,9 @@ nav .mainMenu .closeMenu,
   font-size: 2rem;
   display: none;
   cursor: pointer;
-}
-
-nav .mainMenu .closeMenu,
-.icons i {
-  font-size: 2rem;
-  display: none;
-  cursor: pointer;
   color: #fff;
 }
+
 
 nav > .logo {
   width: 170px;

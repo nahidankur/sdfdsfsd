@@ -309,6 +309,9 @@ nav > ul > li > a:hover::before {
     width: auto ;
     height: 100% ;
   }
+  .mb {
+    display: none;
+  }
 }
 
 @media (max-width: 1446px) {

@@ -314,7 +314,7 @@ nav > ul > li > a:hover::before {
   }
 }
 
-@media (max-width: 1446px) {
+@media (max-width: 2000px) {
   .back-video {
     width: auto ;
     height: 100% ;

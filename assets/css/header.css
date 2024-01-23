@@ -122,7 +122,6 @@ nav > ul > li > a:hover::before {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: ;
 }
 
 .fa-facebook:hover {
@@ -190,7 +189,7 @@ nav > ul > li > a:hover::before {
   }
   
   .logos:hover .logo_items {
-    animation-play-state: paused;
+    animation-play-state:running
   }
   
    .running-logo{
